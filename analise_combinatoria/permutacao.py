@@ -17,12 +17,13 @@ def calculo_permutacao_com_repeticao(n, k):
 
 def permutacao_simples(lst):
     p = [0 for x in range(len(lst))]
+    pn = []
 
     def imprime():
         result = []
         for i in range(len(p)):
             result.append(p[i])
-        print(result)
+        pn.append(result)
 
     def permuta(lst, n):
         if n == len(lst):
@@ -38,16 +39,18 @@ def permutacao_simples(lst):
                     permuta(lst, n+1)
 
     permuta(lst, 0)
+    return pn
 
 
 def permutacao_com_repeticao(lst):
     p = [0 for x in range(len(lst))]
+    pn = []
 
     def imprime():
         result = []
         for i in range(len(p)):
             result.append(p[i])
-        print(result)
+        pn.append(result)
 
     def permuta(lst, n):
         if n == len(lst):
@@ -58,3 +61,4 @@ def permutacao_com_repeticao(lst):
                 permuta(lst, n+1)
 
     permuta(lst, 0)
+    return pn
