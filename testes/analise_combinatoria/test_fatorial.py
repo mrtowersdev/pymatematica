@@ -1,5 +1,5 @@
 import unittest
-from analise_combinatoria.fatorial import fatorial
+from calculos.analise_combinatoria.fatorial import fatorial
 
 
 class FatorialCasoDeTeste(unittest.TestCase):

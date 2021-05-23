@@ -1,5 +1,5 @@
 import unittest
-from analise_combinatoria.combinacao import simples, com_repeticao
+from calculos.analise_combinatoria.combinacao import simples, com_repeticao
 
 
 class CombinacaoCasoDeTeste(unittest.TestCase):
