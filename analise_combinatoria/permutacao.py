@@ -1,12 +1,12 @@
 from analise_combinatoria.fatorial import fatorial
 
 
-def calculo_permutacao_simples(n):
+def simples(n):
     pn = fatorial(n)
     return pn
 
 
-def calculo_permutacao_com_repeticao(n, k):
+def com_repeticao(n, k):
     nk = 1
     for i in k:
         nk = nk * fatorial(i)
